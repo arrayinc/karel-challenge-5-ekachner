@@ -56,11 +56,11 @@ function climbTree(){
 
 
 function leftAdorn(){
-	repeat(2){
-		turnAround();
-		move();
-		putBeeper();
-	}
+		repeat(2){
+			turnAround();
+			move();
+			putBeeper();
+		}
 }
 
 
@@ -89,7 +89,7 @@ function downTree(){
 }
 
 function Solve(){
-	repeat(4){	
+	while(beepersInBag()){
 		climbTree();
 		adornTree();
 		downTree();
